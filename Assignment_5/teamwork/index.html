@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowUp Studio — Cozy Space</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container studio-wrapper">
+        <header class="studio-header text-center">
+            <h1>GlowUp Studio</h1>
+            <p>Welcome to your safe and cozy digital space</p>
+        </header>
+
+        <section class="aesthetic-block">
+            <h2 class="soft-title">Drop Us a Note</h2>
+            <p class="soft-subtitle">Send your sweet feedback or questions to our team.</p>
+            
+            <form id="contactForm" class="needs-validation" novalidate>
+                <div class="mb-4">
+                    <label for="contactName" class="cozy-label">Your Lovely Name</label>
+                    <input type="text" class="form-control cozy-input" id="contactName" name="fullName" placeholder="How should we call you?" minlength="2" required>
+                    <div class="invalid-feedback">Please enter at least 2 characters, sweetie.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="contactEmail" class="cozy-label">Digital Mail (Email)</label>
+                    <input type="email" class="form-control cozy-input" id="contactEmail" name="email" placeholder="yourname@domain.com" required>
+                    <div class="invalid-feedback">Please provide a valid email format.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="contactMessage" class="cozy-label">Your Thoughts (Message)</label>
+                    <textarea class="form-control cozy-input" id="contactMessage" name="message" rows="4" placeholder="Share whatever is on your mind..." minlength="10" maxlength="500" required></textarea>
+                    <div class="invalid-feedback">Your thoughts should be between 10 and 500 characters.</div>
+                </div>
+
+                <button type="submit" class="btn btn-cozy btn-cozy-pink">Send with Love</button>
+            </form>
+        </section>
+
+        <section class="aesthetic-block">
+            <h2 class="soft-title title-purple">Create Your Profile</h2>
+            <p class="soft-subtitle">Join our cozy community and save your permanent place.</p>
+            
+            <form id="regForm" class="needs-validation" novalidate>
+                <div class="mb-4">
+                    <label for="firstName" class="cozy-label">First Name</label>
+                    <input type="text" class="form-control cozy-input" id="firstName" placeholder="First name" minlength="2" required>
+                    <div class="invalid-feedback">Min 2 characters required.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="lastName" class="cozy-label">Last Name</label>
+                    <input type="text" class="form-control cozy-input" id="lastName" placeholder="Last name" minlength="2" required>
+                    <div class="invalid-feedback">Min 2 characters required.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="regEmail" class="cozy-label">Email Address</label>
+                    <input type="email" class="form-control cozy-input" id="regEmail" placeholder="hello@glowup.com" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="password" class="cozy-label">Secret Key (Password)</label>
+                    <input type="password" class="form-control cozy-input" id="password" placeholder="Min 8 characters" minlength="8" required>
+                    <div class="invalid-feedback">Must be at least 8 characters.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="confirmPassword" class="cozy-label">Confirm Secret Key</label>
+                    <input type="password" class="form-control cozy-input" id="confirmPassword" placeholder="Repeat secret key" minlength="8" required>
+                    <div class="invalid-feedback" id="passFeedback">Keys must match perfectly.</div>
+                </div>
+
+                <fieldset class="cozy-fieldset mb-4">
+                    <legend class="cozy-legend">Identify As (Optional)</legend>
+                    <div class="radio-flex-container">
+                        <div class="form-check cozy-radio">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="Female" checked>
+                            <label class="form-check-label" for="female">Female </label>
+                        </div>
+                        <div class="form-check cozy-radio">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                            <label class="form-check-label" for="male">Male </label>
+                        </div>
+                        <div class="form-check cozy-radio">
+                            <input class="form-check-input" type="radio" name="gender" id="notSay" value="Prefer not to say">
+                            <label class="form-check-label" for="notSay">Prefer not to say </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="mb-4">
+                    <label for="country" class="cozy-label">Your Location (Country)</label>
+                    <select class="form-select cozy-input" id="country" required>
+                        <option value="" selected disabled>Choose where you live...</option>
+                        <option value="KZ">Kazakhstan 🇰🇿</option>
+                        <option value="US">United States 🇺🇸</option>
+                        <option value="UK">United Kingdom 🇬🇧</option>
+                    </select>
+                    <div class="invalid-feedback">Selecting a country is required.</div>
+                </div>
+
+                <div class="row g-2 align-items-center">
+                    <div class="col-8">
+                        <button type="submit" class="btn btn-cozy btn-cozy-lavender">Join the Magic</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="reset" id="resetBtn" class="btn btn-cozy-secondary">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
