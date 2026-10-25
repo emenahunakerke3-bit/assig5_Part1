@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowUp Studio — Cozy Space</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container studio-wrapper">
+        <header class="studio-header text-center">
+            <h1>GlowUp Studio</h1>
+            <p>Welcome to your safe and cozy digital space</p>
+        </header>
+
+        <section class="aesthetic-block">
+            <h2 class="soft-title">Drop Us a Note</h2>
+            <p class="soft-subtitle">Send your sweet feedback or questions to our team.</p>
+            
+            <form id="contactForm" class="needs-validation" novalidate>
+                <div class="mb-4">
+                    <label for="contactName" class="cozy-label">Your Lovely Name</label>
+                    <input type="text" class="form-control cozy-input" id="contactName" name="fullName" placeholder="How should we call you?" minlength="2" required>
+                    <div class="invalid-feedback">Please enter at least 2 characters, sweetie.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="contactEmail" class="cozy-label">Digital Mail (Email)</label>
+                    <input type="email" class="form-control cozy-input" id="contactEmail" name="email" placeholder="yourname@domain.com" required>
+                    <div class="invalid-feedback">Please provide a valid email format.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="contactMessage" class="cozy-label">Your Thoughts (Message)</label>
+                    <textarea class="form-control cozy-input" id="contactMessage" name="message" rows="4" placeholder="Share whatever is on your mind..." minlength="10" maxlength="500" required></textarea>
+                    <div class="invalid-feedback">Your thoughts should be between 10 and 500 characters.</div>
+                </div>
+
+                <button type="submit" class="btn btn-cozy btn-cozy-pink">Send with Love</button>
+            </form>
+        </section>
+
+        <section class="aesthetic-block">
+            <h2 class="soft-title title-purple">Create Your Profile</h2>
+            <p class="soft-subtitle">Join our cozy community and save your permanent place.</p>
+            
+            <form id="regForm" class="needs-validation" novalidate>
+                <div class="mb-4">
+                    <label for="firstName" class="cozy-label">First Name</label>
+                    <input type="text" class="form-control cozy-input" id="firstName" placeholder="First name" minlength="2" required>
+                    <div class="invalid-feedback">Min 2 characters required.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="lastName" class="cozy-label">Last Name</label>
+                    <input type="text" class="form-control cozy-input" id="lastName" placeholder="Last name" minlength="2" required>
+                    <div class="invalid-feedback">Min 2 characters required.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="regEmail" class="cozy-label">Email Address</label>
+                    <input type="email" class="form-control cozy-input" id="regEmail" placeholder="hello@glowup.com" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="password" class="cozy-label">Secret Key (Password)</label>
+                    <input type="password" class="form-control cozy-input" id="password" placeholder="Min 8 characters" minlength="8" required>
+                    <div class="invalid-feedback">Must be at least 8 characters.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="confirmPassword" class="cozy-label">Confirm Secret Key</label>
+                    <input type="password" class="form-control cozy-input" id="confirmPassword" placeholder="Repeat secret key" minlength="8" required>
+                    <div class="invalid-feedback" id="passFeedback">Keys must match perfectly.</div>
+                </div>
+
+                <fieldset class="cozy-fieldset mb-4">
+                    <legend class="cozy-legend">Identify As (Optional)</legend>
+                    <div class="radio-flex-container">
+                        <div class="form-check cozy-radio">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="Female" checked>
+                            <label class="form-check-label" for="female">Female </label>
+                        </div>
+                        <div class="form-check cozy-radio">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                            <label class="form-check-label" for="male">Male </label>
+                        </div>
+                        <div class="form-check cozy-radio">
+                            <input class="form-check-input" type="radio" name="gender" id="notSay" value="Prefer not to say">
+                            <label class="form-check-label" for="notSay">Prefer not to say </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="mb-4">
+                    <label for="country" class="cozy-label">Your Location (Country)</label>
+                    <select class="form-select cozy-input" id="country" required>
+                        <option value="" selected disabled>Choose where you live...</option>
+                        <option value="KZ">Kazakhstan 🇰🇿</option>
+                        <option value="US">United States 🇺🇸</option>
+                        <option value="UK">United Kingdom 🇬🇧</option>
+                    </select>
+                    <div class="invalid-feedback">Selecting a country is required.</div>
+                </div>
+
+                <div class="row g-2 align-items-center">
+                    <div class="col-8">
+                        <button type="submit" class="btn btn-cozy btn-cozy-lavender">Join the Magic</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="reset" id="resetBtn" class="btn btn-cozy-secondary">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+<!--TEAMWORK-->
+<div class="glowup-container">
+
+  <header class="glowup-header">
+    <h1 class="brand-title">GlowUp Studio</h1>
+    <p class="brand-subtitle">Interactive Beauty & Wellness Lounge</p>
+  </header>
+
+  <section class="glow-card task-center">
+    <div class="pill-badge pill-purple">Studio Mood</div>
+    <p class="section-desc">Switch the atmosphere between sunny glow and night calm.</p>
+    <button id="themeToggleBtn" type="button" class="btn btn-purple">Switch to Cozy Night</button>
+  </section>
+
+  <section class="glow-card" id="task0-section">
+    <div class="pill-badge pill-green">Say Hello</div>
+    <p class="section-desc">Let us know you better and get your custom welcome.</p>
+    
+    <div class="field-group">
+      <label for="userNameInput" class="field-label">Your Lovely Name</label>
+      <input type="text" id="userNameInput" class="glow-input" placeholder="e.g. Aruzhan">
+    </div>
+    
+    <button id="greetBtn" type="button" class="btn btn-green">Greet Me</button>
+    <p id="welcomeMessage" class="feedback-msg"></p>
+  </section>
+
+  <section class="glow-card" id="task2-section">
+    <div class="pill-badge pill-green">Beauty FAQ</div>
+    <p class="section-desc">Find answers to our community's most loved questions.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-btn" type="button" aria-expanded="false">
+          <span>What is the core mission of GlowUp Studio?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" hidden>
+          We create a warm, calm digital space focused on self-care, mindful beauty routines, and mental wellness.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" type="button" aria-expanded="false">
+          <span>Are your products and recipes cruelty-free?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" hidden>
+          Yes, 100%! All our recommended rituals and organic self-made kits are vegan and cruelty-free.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" type="button" aria-expanded="false">
+          <span>How can I join the VIP Cozy Club?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer" hidden>
+          Simply create your profile using the registration form above, and check your inbox for warm updates!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="glow-card" id="task3-section">
+    <div class="pill-badge pill-purple">Explore Rituals</div>
+    <p class="section-desc">Type below to find matching self-care rituals in real-time.</p>
+
+    <div class="field-group">
+      <label for="searchInput" class="field-label">Search Rituals or Tips</label>
+      <input type="text" id="searchInput" class="glow-input" placeholder="e.g. serum, morning, hydration...">
+    </div>
+
+    <p id="searchCount" class="counter-text">Showing all 6 rituals</p>
+    <p id="noResults" class="error-feedback" style="display: none;">No cozy rituals found matching your search.</p>
+
+    <div class="rituals-grid" id="cardsContainer">
+      <div class="ritual-card">
+        <h3>Morning Rosewater Mist</h3>
+        <p>A gentle refreshing spray that wakes up sensitive skin and restores moisture.</p>
+        <span class="card-tag">Hydration</span>
+      </div>
+
+      <div class="ritual-card">
+        <h3>Glow Vitamin C Serum</h3>
+        <p>Brightens complexion and defends against daily stress for radiant vitality.</p>
+        <span class="card-tag">Brightening</span>
+      </div>
+
+      <div class="ritual-card">
+        <h3>Lavender Calm Cream</h3>
+        <p>A soothing bedtime night balm with essential lavender oils to relax your senses.</p>
+        <span class="card-tag">Relaxation</span>
+      </div>
+
+      <div class="ritual-card">
+        <h3>Green Tea Clay Mask</h3>
+        <p>Detoxifies pores and softens delicate areas with rich antioxidant botanicals.</p>
+        <span class="card-tag">Detox</span>
+      </div>
+
+      <div class="ritual-card">
+        <h3>Silk Pillow Therapy</h3>
+        <p>Reduces hair friction and prevents facial creases for effortless morning beauty.</p>
+        <span class="card-tag">Night Care</span>
+      </div>
+
+      <div class="ritual-card">
+        <h3>Chamomile Eye Essence</h3>
+        <p>Cooling herbal blend that melts away puffiness and dark circles after screen time.</p>
+        <span class="card-tag">Eyes</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="glow-card" id="task4-section">
+    <div class="pill-badge pill-green">My Daily Glow Routine</div>
+    <p class="section-desc">Build your personal checklist for today. Items saved dynamically!</p>
+
+    <p class="routine-counter">Total Routine Steps: <span id="itemCount">0</span></p>
+
+    <form id="itemForm" class="routine-form">
+      <div class="field-group" style="flex: 1; margin-bottom: 0;">
+        <label for="itemInput" class="field-label">Add a self-care step</label>
+        <input type="text" id="itemInput" class="glow-input" placeholder="e.g. Drink 2L water, Apply sunscreen...">
+      </div>
+      <button type="submit" class="btn btn-green btn-inline">Add Step</button>
+    </form>
+
+    <ul id="itemList" class="glow-item-list"></ul>
+  </section>
+
+</div>    
+</body>
+</html>

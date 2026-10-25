@@ -1,0 +1,509 @@
+body {
+    background: linear-gradient(135deg, #f1f7f4 0%, #e2efe9 50%, #ccdcd2 100%);
+    background-attachment: fixed;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #000000; 
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.studio-header {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    width: 100%;
+    text-align: center !important; 
+    display: block;
+}
+
+.studio-header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: center !important;
+}
+
+.studio-header p {
+    color: #222222; 
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.soft-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #52b788 0%, #2d6a4f 100%); 
+    padding: 12px 28px;        
+    border-radius: 14px;       
+    display: table;            
+    margin: 0 auto 20px auto;  
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(45, 106, 79, 0.15); 
+}
+
+.soft-subtitle {
+    color: #333333;
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+    text-align: center;        
+}
+
+.cozy-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #000000; 
+    margin-bottom: 12px;
+    display: block;
+    text-align: left;
+}
+
+.cozy-input {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid #ebdcf5 !important;
+    color: #4a3e56 !important;
+    border-radius: 14px !important; 
+    padding: 12px 16px !important;
+    font-size: 0.95rem;
+    transition: all 0.25s ease !important;
+    width: 100% !important;
+    display: block;
+    margin: 0 auto !important;
+}
+
+.cozy-input::placeholder {
+    color: #c4b9cf;
+}
+
+.cozy-input:focus {
+    background-color: #ffffff !important;
+    border-color: #dfbbf2 !important;
+    box-shadow: 0 0 0 4px rgba(223, 187, 242, 0.3) !important;
+}
+
+.cozy-fieldset {
+    border: 1px dashed #e1cfea;
+    border-radius: 16px;
+    padding: 22px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cozy-legend {
+    float: none;
+    width: auto;
+    padding: 0 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #9281a1;
+}
+
+.radio-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cozy-radio input:checked {
+    background-color: #d1b3e4;
+    border-color: #d1b3e4;
+}
+
+.btn-cozy {
+    width: 100%;
+    padding: 13px;
+    font-weight: 600;
+    border-radius: 14px;
+    border: none;
+    color: #ffffff !important; 
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-cozy-pink {
+    background: linear-gradient(135deg, #52b788 0%, #2d6a4f 100%);
+    box-shadow: 0 4px 15px rgba(45, 106, 79, 0.25);
+}
+
+.btn-cozy-pink:hover {
+    background: linear-gradient(135deg, #40916c 0%, #1b4332 100%);
+    box-shadow: 0 6px 20px rgba(45, 106, 79, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-cozy-lavender {
+    background: linear-gradient(135deg, #52b788 0%, #2d6a4f 100%);
+    box-shadow: 0 4px 15px rgba(45, 106, 79, 0.25);
+}
+
+.btn-cozy-lavender:hover {
+    background: linear-gradient(135deg, #40916c 0%, #1b4332 100%);
+    box-shadow: 0 6px 20px rgba(45, 106, 79, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-cozy-secondary {
+    width: 100%;
+    padding: 13px;
+    font-weight: 600;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #d8e2dc;
+    color: #2d6a4f; 
+    transition: all 0.2s ease;
+}
+
+.btn-cozy-secondary:hover {
+    background-color: #e8f5e9;
+    color: #1b4332;
+}
+
+.was-validated .form-control:invalid, .was-validated .form-select:invalid {
+    border-color: #ff9aa2 !important; 
+    background-image: none;
+}
+
+.was-validated .form-control:valid, .was-validated .form-select:valid {
+    border-color: #b5ead7 !important; 
+    background-image: none;
+}
+
+.invalid-feedback { 
+    color: #cc6666; 
+    font-size: 0.8rem; 
+    margin-top: 6px; 
+    text-align: left; 
+}
+
+.valid-feedback { 
+    display: none !important; 
+}
+
+.cozy-alert {
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    color: #388e3c;
+    border-radius: 14px;
+    padding: 15px;
+}
+
+.mb-4 {
+    margin-bottom: 30px !important; 
+}
+
+.aesthetic-block {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(204, 220, 210, 0.7);
+    border-radius: 24px;
+    padding: 45px;
+    margin-bottom: 60px !important; 
+    position: relative;
+    box-shadow: 0 10px 30px rgba(74, 99, 85, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.title-purple {
+    background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%) !important;
+    box-shadow: 0 4px 12px rgba(103, 58, 183, 0.2) !important;
+}
+/* Базалық шрифтер мен фон */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at 50% 20%, #eef7f2 0%, #d8ece0 100%);
+  color: #2d3748;
+  margin: 0;
+  padding: 40px 15px;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ортақ контейнер */
+.glowup-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Header */
+.glowup-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.brand-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin: 0 0 8px 0;
+}
+.brand-subtitle {
+  color: #718096;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Карточкалар дизайны (Скриншоттағы Drop Us a Note карточкасындай) */
+.glow-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 32px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Дөңгелек Badge (Drop Us a Note стилі) */
+.pill-badge {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 10px 24px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.pill-green {
+  background-color: #2d6a4f;
+}
+.pill-purple {
+  background-color: #6b46c1;
+}
+
+.section-desc {
+  color: #718096;
+  font-size: 0.92rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Input және Label стильдері */
+.field-group {
+  margin-bottom: 18px;
+}
+.field-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #1a202c;
+  margin-bottom: 8px;
+}
+.glow-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+  color: #2d3748;
+  transition: border-color 0.2s;
+}
+.glow-input:focus {
+  border-color: #6b46c1;
+}
+
+/* Батырмалар стилі (Send with Love & Create Profile) */
+.btn {
+  width: 100%;
+  padding: 13px 20px;
+  border-radius: 14px;
+  border: none;
+  font-size: 0.98rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffffff;
+  transition: opacity 0.2s, transform 0.1s;
+}
+.btn:hover {
+  opacity: 0.92;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn-green {
+  background-color: #2d6a4f;
+}
+.btn-purple {
+  background-color: #6b46c1;
+}
+.btn-inline {
+  width: auto;
+  align-self: flex-end;
+  white-space: nowrap;
+}
+
+/* Мәлімет жазулары */
+.feedback-msg {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.counter-text {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 600;
+}
+.error-feedback {
+  color: #e53e3e;
+  font-size: 0.85rem;
+}
+
+/* FAQ Accordion */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-btn {
+  width: 100%;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #2d3748;
+  cursor: pointer;
+  text-align: left;
+}
+.faq-btn:hover {
+  background-color: #edf2f7;
+}
+.faq-answer {
+  padding: 14px 18px;
+  background-color: #faf5ff;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  color: #4a5568;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+/* Task 3 Grid & Cards */
+.rituals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+.ritual-card {
+  background: #fdfdfd;
+  border: 1.5px solid #edf2f7;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ritual-card h3 {
+  font-size: 0.98rem;
+  margin: 0 0 6px 0;
+  color: #2d6a4f;
+}
+.ritual-card p {
+  font-size: 0.83rem;
+  color: #718096;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+.card-tag {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  background-color: #e6fffa;
+  color: #234e52;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+
+/* Task 4: Dynamic Routine */
+.routine-counter {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2d6a4f;
+  margin-bottom: 12px;
+}
+.routine-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.glow-item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.routine-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7fafc;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+  color: #2d3748;
+}
+.btn-remove {
+  background-color: #feb2b2;
+  color: #9b2c2c;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-remove:hover {
+  background-color: #fc8181;
+}
+
+/* ================= DARK COZY THEME (Task 1) ================= */
+body.dark-theme {
+  background: radial-gradient(circle at 50% 20%, #1a202c 0%, #0d1117 100%);
+  color: #e2e8f0;
+}
+body.dark-theme .brand-title {
+  color: #f7fafc;
+}
+body.dark-theme .glow-card {
+  background: #232a36;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+body.dark-theme .field-label {
+  color: #e2e8f0;
+}
+body.dark-theme .glow-input {
+  background: #1a202c;
+  border-color: #4a5568;
+  color: #f7fafc;
+}
+body.dark-theme .faq-btn {
+  background: #1a202c;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+body.dark-theme .faq-answer {
+  background: #2d3748;
+  color: #cbd5e0;
+}
+body.dark-theme .ritual-card {
+  background: #1a202c;
+  border-color: #4a5568;
+}
+body.dark-theme .ritual-card h3 {
+  color: #68d391;
+}
+body.dark-theme .routine-li {
+  background: #1a202c;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
